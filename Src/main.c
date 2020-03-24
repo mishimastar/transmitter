@@ -51,10 +51,11 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-char str1[150]={0}; //for test channel
-uint16_t buf1[20] = {0}; //for transmit to air
-	char str_tx[21] = {0}; // to transmit to USB
-	char str_rx[21]; // to recieve from USB
+	char str1[150]={0}; //for test channel
+//	uint16_t buf1[20] = {0}; //for transmit to air
+//	char str_tx[21] = {0}; // to transmit to USB
+//	char str_rx[21]; // to recieve from USB
+	uint8_t recBufLen = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -79,10 +80,10 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 //////uint8_t dt_reg=0; for testing a channel
-	//uint8_t retr_cnt, dt; // for counter
+	//uint8_t retr_cnt; // for counter
 	//uint16_t i = 1, retr_cnt_full; // the same
-	uint8_t i = 0;
-
+//	uint8_t i = 0; // for FOR
+	uint8_t dt;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -109,7 +110,7 @@ int main(void)
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
 	HAL_Delay(200);
-					NRF24_ini();
+	NRF24_ini();
 //							sprintf(str_tx,"USB Transmit\r\n");
 
   /* USER CODE END 2 */
@@ -118,14 +119,25 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		
-		memcpy(str_tx,(char*)&UserRxBufferFS,30);
-		CDC_Transmit_FS((unsigned char*)str_tx, strlen(str_tx));
+		if(recBufLen > 0)
+		{
+//HAL_Delay(250);
+				dt = NRF24L01_Send((uint8_t*)UserRxBufferFS);
+				CDC_Transmit_FS((uint8_t*)UserRxBufferFS, recBufLen);
+				recBufLen = 0;
+		}
+//		int i = 1;
+//		memcpy(str_tx,(char*)&UserRxBufferFS,64);
+//		CDC_Transmit_FS((unsigned char*)str_tx, strlen(str_tx));
+//		for(i = 0; i <= 63; i++)
+//		{
+//		UserRxBufferFS[i] = 0;
+//		}
 				//for (i = 0; i < 63; i++) {free((char*)&UserRxBufferFS[i]);}
 
-                HAL_Delay(500);
+//                HAL_Delay(500);
 //////		HAL_Delay(1000);
-//////		char string[] = "12345555555555555566666666666666777777777777777888888888889";
+//////		char string[] = "12345678987654321sdfgjdynujydfghnyrfgdf";
 //////		memcpy(buf1,(uint8_t*)&string,30);
 //		if(retr_cnt_full>999) retr_cnt_full=999;
 //		memcpy(buf1+2,(uint8_t*)&retr_cnt_full,2);

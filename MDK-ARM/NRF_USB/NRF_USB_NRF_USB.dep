@@ -1,6 +1,6 @@
 Dependencies for Project 'NRF_USB', Target 'NRF_USB': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (../Src/main.c)(0x5E654E99)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_NRF_USB-IC:\Users\Сергей\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Сергей\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32F103xB-o nrf_usb\main.o --omf_browse nrf_usb\main.crf --depend nrf_usb\main.d)
+F (../Src/main.c)(0x5E79EE80)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_NRF_USB-IC:\Users\Сергей\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Сергей\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32F103xB-o nrf_usb\main.o --omf_browse nrf_usb\main.crf --depend nrf_usb\main.d)
 I (../Inc/main.h)(0x5E5D695B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5E5A5FB6)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5E5D695A)
@@ -52,7 +52,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B186A)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B1868)
 I (../Inc/gpio.h)(0x5E5D6956)
 I (../Inc/NRF24.h)(0x5E5D8EBE)
-I (../Inc/usbd_cdc_if.h)(0x5E64C160)
+I (../Inc/usbd_cdc_if.h)(0x5E79E785)
 I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x5E5DA792)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5E5A5FED)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x5E5A5FED)
@@ -277,7 +277,7 @@ I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5E5A5FED)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x5E5A5FED)
 I (../Inc/usbd_desc.h)(0x5E5D6959)
 I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x5E5DA792)
-I (../Inc/usbd_cdc_if.h)(0x5E64C160)
+I (../Inc/usbd_cdc_if.h)(0x5E79E785)
 F (../Src/usbd_conf.c)(0x5E5D6959)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_NRF_USB-IC:\Users\Сергей\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Сергей\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32F103xB-o nrf_usb\usbd_conf.o --omf_browse nrf_usb\usbd_conf.crf --depend nrf_usb\usbd_conf.d)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5E5A5F64)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5E5A5F64)
@@ -378,8 +378,8 @@ I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5E5A5FED)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5E5A5FED)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x5E5A5FED)
 I (../Inc/usbd_desc.h)(0x5E5D6959)
-F (../Src/usbd_cdc_if.c)(0x5E64C729)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_NRF_USB-IC:\Users\Сергей\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Сергей\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32F103xB-o nrf_usb\usbd_cdc_if.o --omf_browse nrf_usb\usbd_cdc_if.crf --depend nrf_usb\usbd_cdc_if.d)
-I (../Inc/usbd_cdc_if.h)(0x5E64C160)
+F (../Src/usbd_cdc_if.c)(0x5E79EB6B)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_NRF_USB-IC:\Users\Сергей\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Сергей\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32F103xB-o nrf_usb\usbd_cdc_if.o --omf_browse nrf_usb\usbd_cdc_if.crf --depend nrf_usb\usbd_cdc_if.d)
+I (../Inc/usbd_cdc_if.h)(0x5E79E785)
 I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x5E5DA792)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5E5A5FED)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5E5A5FED)
@@ -545,7 +545,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h)(0x5E5A5FB7)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h)(0x5E5A5FB8)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h)(0x5E5A5FB8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B1868)
-I (../Inc/usbd_cdc_if.h)(0x5E64C160)
+I (../Inc/usbd_cdc_if.h)(0x5E79E785)
 I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x5E5DA792)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5E5A5FED)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5E5A5FED)
