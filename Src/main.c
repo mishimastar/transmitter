@@ -125,7 +125,7 @@ int main(void)
 
                 HAL_Delay(500);
 //////		HAL_Delay(1000);
-//////		char string[] = "SuckOFF_Mutherfucker_orDIE_BITCH_IfYou_Wanna_PRIVET_ANDREI_NU_GDE_TU_BUL_NU_OBNIMI_MENYA_SKOREI_PRIVET_ANDREI__PRIVET_ANDREI__PRIVET_ANDREI_PRIVET_ANDREI_";
+//////		char string[] = "12345555555555555566666666666666777777777777777888888888889";
 //////		memcpy(buf1,(uint8_t*)&string,30);
 //		if(retr_cnt_full>999) retr_cnt_full=999;
 //		memcpy(buf1+2,(uint8_t*)&retr_cnt_full,2);
